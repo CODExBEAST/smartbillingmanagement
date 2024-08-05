@@ -1,0 +1,249 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Billing System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container" id="loginSection">
+        <h1>Login</h1>
+        <form id="loginForm">
+            <label for="username">Username:</label>
+            <input type="text" id="username" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" required>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+
+    <nav id="navbar" style="display:none;">
+        <a href="#" onclick="showSection('inventorySection')">Inventory Management</a>
+        <a href="#" onclick="showSection('expensesSection')">Expense Tracker</a>
+        <a href="#" onclick="showSection('invoiceSection')">Dynamic Invoice</a>
+        <a href="#" onclick="showSection('customerDataSection')">Customer Data</a>
+        <a href="#" onclick="showSection('communicationSection')">Communication</a>
+        <a href="#" onclick="showSection('paymentSection')">Payment Processing</a>
+    </nav>
+
+    <div class="container" id="inventorySection" style="display:none;">
+        <h1>Inventory Management</h1>
+        <form id="inventoryForm">
+            <input type="text" id="itemName" placeholder="Item Name" required>
+            <input type="number" id="itemQuantity" placeholder="Quantity" required>
+            <input type="number" id="itemPrice" placeholder="Price" required>
+            <button type="submit">Add Item</button>
+        </form>
+        <ul id="inventoryList"></ul>
+    </div>
+
+    <div class="container" id="expensesSection" style="display:none;">
+        <h1>Expense Tracker</h1>
+        <form id="expenseForm">
+            <input type="text" id="expenseDescription" placeholder="Description" required>
+            <input type="number" id="expenseAmount" placeholder="Amount" required>
+            <button type="submit">Add Expense</button>
+        </form>
+        <ul id="expenseList"></ul>
+    </div>
+
+    <div class="container" id="invoiceSection" style="display:none;">
+        <h1>Dynamic Invoice Generator</h1>
+        <form id="invoiceForm">
+            <input type="text" id="customerName" placeholder="Customer Name" required>
+            <input type="email" id="customerEmail" placeholder="Customer Email" required>
+            <input type="text" id="customerPhone" placeholder="Customer Phone" required>
+            <button type="submit">Generate Invoice</button>
+        </form>
+        <div id="invoiceOutput"></div>
+        <button id="sendInvoiceEmail">Send Invoice via Email</button>
+        <button id="sendInvoiceSms">Send Invoice via SMS</button>
+    </div>
+
+    <div class="container" id="customerDataSection" style="display:none;">
+        <h1>Customer Data Store</h1>
+        <form id="customerForm">
+            <input type="text" id="customerName" placeholder="Customer Name" required>
+            <input type="email" id="customerEmail" placeholder="Customer Email" required>
+            <input type="text" id="customerPhone" placeholder="Customer Phone" required>
+            <button type="submit">Add Customer</button>
+        </form>
+        <ul id="customerList"></ul>
+    </div>
+
+    <div class="container" id="communicationSection" style="display:none;">
+        <h1>Communication Logs</h1>
+        <ul id="communicationList"></ul>
+    </div>
+
+    <div class="container" id="paymentSection" style="display:none;">
+        <h1>Payment Processing</h1>
+        <form id="paymentForm">
+            <input type="text" id="paymentAmount" placeholder="Payment Amount" required>
+            <input type="text" id="paymentMethod" placeholder="Payment Method" required>
+            <button type="submit">Process Payment</button>
+        </form>
+        <div id="paymentOutput"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+ -->
+
+
+
+
+
+
+
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Billing System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container" id="loginSection">
+        <h1>Login</h1>
+        <form id="loginForm">
+            <label for="username">Username:</label>
+            <input type="text" id="username" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" required>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+
+    <nav id="navbar" style="display:none;">
+        <a href="#" onclick="showSection('inventorySection')">Inventory Management</a>
+        <a href="#" onclick="showSection('expensesSection')">Expense Tracker</a>
+        <a href="#" onclick="showSection('invoiceSection')">Dynamic Invoice</a>
+        <a href="#" onclick="showSection('customerDataSection')">Customer Data</a>
+        <a href="#" onclick="showSection('communicationSection')">Communication</a>
+        <a href="#" onclick="showSection('paymentSection')">Payment Processing</a>
+    </nav>
+
+    <div class="container" id="inventorySection" style="display:none;">
+        <h1>Inventory Management</h1>
+        <form id="inventoryForm">
+            <input type="text" id="itemName" placeholder="Item Name" required>
+            <input type="number" id="itemQuantity" placeholder="Quantity" required>
+            <input type="number" id="itemPrice" placeholder="Price" required>
+            <button type="submit">Add Item</button>
+        </form>
+        <ul id="inventoryList">
+            <li>
+                <div>Item: Office Chair</div>
+                <div>Stock: 50</div>
+                <div>Price: $120</div>
+            </li>
+            <li>
+                <div>Item: Desk Lamp</div>
+                <div>Stock: 30</div>
+                <div>Price: $45</div>
+            </li>
+        </ul>
+    </div>
+
+    <div class="container" id="expensesSection" style="display:none;">
+        <h1>Expense Tracker</h1>
+        <form id="expenseForm">
+            <input type="text" id="expenseDescription" placeholder="Description" required>
+            <input type="number" id="expenseAmount" placeholder="Amount" required>
+            <button type="submit">Add Expense</button>
+        </form>
+        <ul id="expenseList">
+            <li>
+                <div>Expense: Office Supplies</div>
+                <div>Date: 2024-07-25</div>
+                <div>Amount: $75</div>
+            </li>
+            <li>
+                <div>Expense: Software License</div>
+                <div>Date: 2024-07-20</div>
+                <div>Amount: $200</div>
+            </li>
+        </ul>
+    </div>
+
+    <div class="container" id="invoiceSection" style="display:none;">
+        <h1>Dynamic Invoice Generator</h1>
+        <form id="invoiceForm">
+            <input type="text" id="customerName" placeholder="Customer Name" required>
+            <input type="email" id="customerEmail" placeholder="Customer Email" required>
+            <input type="text" id="customerPhone" placeholder="Customer Phone" required>
+            <button type="submit">Generate Invoice</button>
+        </form>
+        <div id="invoiceOutput">
+            <h3>Invoice #001</h3>
+            <p><strong>Customer:</strong> John Doe</p>
+            <p><strong>Email:</strong> john.doe@example.com</p>
+            <p><strong>Phone:</strong> (555) 123-4567</p>
+            <p><strong>Total:</strong> $300</p>
+        </div>
+        <button id="sendInvoiceEmail">Send Invoice via Email</button>
+        <button id="sendInvoiceSms">Send Invoice via SMS</button>
+    </div>
+
+    <div class="container" id="customerDataSection" style="display:none;">
+        <h1>Customer Data Store</h1>
+        <form id="customerForm">
+            <input type="text" id="customerName" placeholder="Customer Name" required>
+            <input type="email" id="customerEmail" placeholder="Customer Email" required>
+            <input type="text" id="customerPhone" placeholder="Customer Phone" required>
+            <button type="submit">Add Customer</button>
+        </form>
+        <ul id="customerList">
+            <li>
+                <div>Name: John Doe</div>
+                <div>Email: john.doe@example.com</div>
+                <div>Phone: (555) 123-4567</div>
+            </li>
+            <li>
+                <div>Name: Jane Smith</div>
+                <div>Email: jane.smith@example.com</div>
+                <div>Phone: (555) 987-6543</div>
+            </li>
+        </ul>
+    </div>
+
+    <div class="container" id="communicationSection" style="display:none;">
+        <h1>Communication Logs</h1>
+        <ul id="communicationList">
+            <li>
+                <div>Date: 2024-07-25</div>
+                <div>Type: Email</div>
+                <div>Content: Sent invoice to John Doe.</div>
+            </li>
+            <li>
+                <div>Date: 2024-07-22</div>
+                <div>Type: SMS</div>
+                <div>Content: Reminder sent to Jane Smith.</div>
+            </li>
+        </ul>
+    </div>
+
+    <div class="container" id="paymentSection" style="display:none;">
+        <h1>Payment Processing</h1>
+        <form id="paymentForm">
+            <input type="text" id="paymentAmount" placeholder="Payment Amount" required>
+            <input type="text" id="paymentMethod" placeholder="Payment Method" required>
+            <button type="submit">Process Payment</button>
+        </form>
+        <div id="paymentOutput">
+            <h3>Recent Transactions</h3>
+            <p><strong>Transaction ID:</strong> TXN123456</p>
+            <p><strong>Amount:</strong> $150</p>
+            <p><strong>Method:</strong> Credit Card</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
